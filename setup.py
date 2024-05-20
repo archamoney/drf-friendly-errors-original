@@ -76,7 +76,7 @@ setup(
     package_data=get_package_data('rest_framework_friendly_errors'),
     # Only support Python/Django/DRF versions in testing matrix
     install_requires=['Django>=4.0,<5', 'djangorestframework>=3.11'],
-    python_requires='>=3.8,<3.10',
+    python_requires='>=3.8,<3.11',
     zip_safe=False,
     classifiers=[
         'Environment :: Web Environment',
