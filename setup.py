@@ -74,7 +74,9 @@ setup(
     author_email='t.laszczuk@futuremind.com',
     packages=get_packages('rest_framework_friendly_errors'),
     package_data=get_package_data('rest_framework_friendly_errors'),
-    install_requires=[],
+    # Only support Python/Django/DRF versions in testing matrix
+    install_requires=['Django>=4.0,<5', 'djangorestframework>=3.11'],
+    python_requires='>=3.8,<3.13',
     zip_safe=False,
     classifiers=[
         'Environment :: Web Environment',
